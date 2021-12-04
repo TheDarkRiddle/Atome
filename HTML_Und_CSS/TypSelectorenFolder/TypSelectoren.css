@@ -1,0 +1,13 @@
+html {
+  background-color:#b31e14;
+
+  }
+body {
+  color: black;
+  border:2px solid;
+}
+
+h1{
+  border:inherit;
+
+}
