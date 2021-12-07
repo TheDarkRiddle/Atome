@@ -1,0 +1,18 @@
+.testClass{
+  color: green;
+  text-align: right;
+}
+
+.superwichtig{
+  color: red;
+  font-family: "Copperplate";
+  font-weight: bold;
+
+}
+
+h1{
+  text-align: right;
+}
+p.testclass{
+  background-color: grey;
+}
