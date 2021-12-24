@@ -1,0 +1,13 @@
+html{
+  background-color: black;
+  color:white;
+}
+
+div{
+  background-color:#378a4d;
+  width:700px;
+  height:500px;
+  padding:50px;
+  margin:50px;
+  border:20px solid #1b4f29;
+}

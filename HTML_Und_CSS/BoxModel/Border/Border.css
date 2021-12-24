@@ -1,0 +1,71 @@
+
+div{
+  width: 210px;
+  height: 210px;
+  background-color: #0f732a;
+  margin-bottom:20px;
+  padding:10px;
+}
+#eins{
+  border: 20px solid red;
+}
+#zwei{
+  border-width:10px;
+  border-style:solid;
+  border-color:red;
+}
+#drei{
+  border: 20px dotted red;
+}
+#vier{
+  border: 20px dashed red;
+}
+#fuenf{
+  border: 20px double red;
+}
+#sechs{
+  border: 20px groove red;
+}
+#sieben{
+  border: 20px ridge red;
+}
+#acht{
+  border: 20px inset red;
+}
+#neun{
+  border: 20px outset red;
+}
+#zehn{
+  border: 20px solid;
+  border-color: black red yellow black;
+}
+#elf{
+  border-top:20px dotted pink;
+  border-bottom:40px groove yellow;
+}
+#zwoelf{
+  box-sizing: border-box;
+  height: 50px;
+  width: 360px;
+  padding: 15px;
+  background-color: DeepSkyBlue;
+
+  border-left: 10px solid DodgerBlue;
+
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+#dreizehn{
+  box-sizing: border-box;
+  height:45px;
+  width:150px;
+  padding:10px;
+  background-color: #940c2c;
+
+  border-left: 10px groove #690a20;
+
+  color:black;
+  font-style:bold;
+  font-size:20px;
+}
