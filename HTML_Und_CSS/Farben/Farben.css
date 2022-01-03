@@ -1,7 +1,6 @@
 html{
   height:100%;
   width:100%;
-
 }
 body{
   height:100%;
@@ -12,4 +11,26 @@ body{
   height:25%;
   width:25%;
   background-color:#FFDDCC;
+}
+#rgb{
+
+  height:25%;
+  width:25%;
+  background-color:rgb(222,30,66);
+}
+
+#rgba{
+
+  height:300px;
+  width:300px;
+  background-color:rgba(222,30,66,0.2);
+}
+
+.hintergrund{
+
+  height:400px;
+  width:400px;
+  padding:50px;
+  background-color:rgb(10,15,33);
+    box-sizing:border-box;
 }
