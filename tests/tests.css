@@ -9,7 +9,7 @@ body{
   background-color:#fff;
 }
 
-#banner{
+header{
   box-sizing:border-box;
 
   width:100%;
@@ -24,9 +24,16 @@ body{
   border-right:300px ridge rgba(43, 59, 117, 0.2);
 }
 
+header, footer{
+  color:#fff;
+}
+
 main{
-  margin-left:100px;
   margin-top:10px;
+}
+
+#mainText{
+    margin-left:100px;
 }
 
 #überschrift{
@@ -34,7 +41,7 @@ main{
   top:10px;
   left:100px;
 }
-
+/*Unteres Banner Styling Anfang---->*/
 footer{
   background-color:#354e62;
 
@@ -52,7 +59,14 @@ footer > div{
   height:100%;
   width:30%;
 }
-
+footer div span{
+  position:relative;
+  top:10px;
+  left:50px;
+  font-size:2rem;
+}
+/*<---- Unteres Banner Styling Ende*/
+//Coloring of the
 #adresseDiv{
   background-color:#243851;
 }
@@ -63,12 +77,35 @@ footer > div{
   background-color:#192533;
 }
 
-#runter, #hoch{
+/* Button Optick*/
+#hochButton{
   display: inline-block;
-  margin:20px;
+  position: sticky;
+  top:100px;
+
+  width:100px;
+  margin-top:20px;
   background-color:#243851;
+
+  font-size:1.5rem;
+}
+#buttonText{
+  margin-left:20px;
+}
+a:link{
+  color:#fff;
+}
+a:hover{
+  text-decoration: underline;
 }
 a:visited{
   text-decoration: none;
   color:#fff;
+}
+
+/*Link Linki back*/
+#LinkLinki{
+  background-color:#243851;
+  width:100px;
+  margin-left:40px;
 }
