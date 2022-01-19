@@ -6,7 +6,7 @@ body{
   margin:0px;
   padding:0px;
 
-  background-color:#354e62;
+  background-color:#fff;
 }
 
 #banner{
@@ -61,4 +61,14 @@ footer > div{
 }
 #weiteresDiv{
   background-color:#192533;
+}
+
+#runter, #hoch{
+  display: inline-block;
+  margin:20px;
+  background-color:#243851;
+}
+a:visited{
+  text-decoration: none;
+  color:#fff;
 }
