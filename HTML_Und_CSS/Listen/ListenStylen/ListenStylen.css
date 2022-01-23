@@ -1,0 +1,23 @@
+.liste1{
+  list-style-type: square;
+}
+
+.liste2{
+  list-style-position: inside;
+}
+
+.liste3{
+  list-style-image: url("pfeil.png");
+}
+
+.liste4{
+  list-style: square inside url("pfeil.png")
+}
+
+.liste5 >li{
+  display:inline-block;
+}
+
+div{
+  color: #33F;
+}
