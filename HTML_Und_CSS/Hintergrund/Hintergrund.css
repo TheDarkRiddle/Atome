@@ -1,0 +1,62 @@
+body{
+  height: 6000px;
+}
+div{
+  width: 600px;
+  height: 80px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+#test01{
+  background-color:#F373E2;
+}
+
+#test02{
+  background-image:url("Hintergrund.png");
+
+}
+
+#test03{
+  background-image: url("Hintergrund.png");
+
+  background-repeat: no-repeat;
+}
+#test04{
+  background-image: url("Hintergrund.png");
+
+  background-repeat: repeat-x;
+}
+#test05{
+  background-image: url("Hintergrund.png");
+
+  background-repeat: repeat-y;
+}
+
+#test06{
+  background-image: url("Hintergrund.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#test07{
+  background-image: url("Hintergrund.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#test08{
+  background-image: url("Hintergrund.png");
+  background-repeat: no-repeat;
+  background-position: right 60px bottom 30px;
+}
+
+#test09{
+  background-image: url("Hintergrund.png");
+  background-attachment: fixed;
+}
+/* background: color img repeat attatchment position */
+#test10{
+  background-image: url("Hintergrund.png");
+  background: #EE46FF url("Hintergrund.png") repeat-Y fixed 50% 50%;
+}
