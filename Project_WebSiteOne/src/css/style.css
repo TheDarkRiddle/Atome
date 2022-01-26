@@ -11,13 +11,21 @@ body{
   font-family:'raleway','lato', 'Helvetica Neue', 'Areal' ,'sans-serif';
   font-size: 16px;
 }
-/* Hintergrund Bild */
+/* __Hintergrund Bild im Banner__ */
 .header-Banner{
   width: 100%;
   height: 0px;
-  padding-top:20.83%;
-  background: url(../img/Hintergrund.jpg) no-repeat 50% 50%;
+  padding-top:20.83%; /* __Rechnung: 1920px*400px   1000px* ??? Wike viel % von 1920px sind 400px? 400/1920*100=20.83%__*/
+  background: url(../img/hintergrund.jpg) no-repeat 50% 50%;
   background-size:contain;
+}
+
+.header-Banner-klein{
+  width: 100%;
+  height: 0px;
+  padding-top:15.625%; /* __Rechnung: 1920px*300px   1000px* ??? Wike viel % von 1920px sind 300px? 300/1920*100=15.625%__*/
+  background: url(../img/hintergrund-klein.jpg) no-repeat 50% 50%; 
+  background-size:contain; /*__Woran orientier t sich die nGröße. AKA hier: Die Kommplette hoche und breite des Elements __*/
 }
 /* __Navigations Leiste__ */
 .header-nav{
