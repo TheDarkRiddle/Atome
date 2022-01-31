@@ -1,0 +1,7 @@
+.FloateLeft{
+  position: sticky;
+}
+.FloateRight{
+  float: right;
+}
+p{ background: #DDD;}

@@ -1,0 +1,16 @@
+.container{
+  background: #888888;
+}
+.clearFix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+img{
+  width:200px;
+  height: auto;
+  float: right;
+}
+p{
+  background: #F00;
+}

@@ -1,0 +1,14 @@
+p{
+  background: #888888;s
+}
+
+.floatLeft{
+  float: left;
+}
+.floatRight{
+  float: right;
+}
+/* Claer: bot; etc */
+.clearLeft{
+  clear: left;
+}

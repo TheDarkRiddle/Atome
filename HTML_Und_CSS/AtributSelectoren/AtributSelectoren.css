@@ -1,0 +1,36 @@
+/* Atribut Selectoren */
+body{
+  height: 2000px;
+}
+[href]{
+  background:#888888;
+}
+
+[id="SuperID"]{
+  display: block;
+}
+/* Irgendwo in der Liste von classS */
+[class~="einBild"]{
+  height: 100px;
+}
+/* Wert muss "test" sin oder ein "test-" habenS*/
+[class|="test"]{
+  color: #F00;
+}
+/* Fängt mit dem Wert an */
+[title^="Ank"]{
+  border: 20px solid #0F0;
+}
+/* Muss mit dem Wert enden */
+[title$="er"]{
+  position: sticky;
+  top: 40px;
+}
+/* Enthätl den wert */
+[title*="n"]::after{
+  content: "Hallo Hallo";
+}
+/* Ignorierd groß und klein schreibung */
+[title*="NK" i]{
+  text-decoration: underline;
+}
