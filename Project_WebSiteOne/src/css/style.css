@@ -5,12 +5,15 @@ grey=     #3D3F45
 White=    #E5E5E5
 red=      #A62C21
 */
+
 body{
   box-sizing:border-box;
   margin:0;
   font-family:'raleway','lato', 'Helvetica Neue', 'Areal' ,'sans-serif';
   font-size: 16px;
 }
+
+
 /* __Hintergrund Bild im Banner__ */
 .header-Banner{
   width: 100%;
@@ -24,9 +27,11 @@ body{
   width: 100%;
   height: 0px;
   padding-top:15.625%; /* __Rechnung: 1920px*300px   1000px* ??? Wike viel % von 1920px sind 300px? 300/1920*100=15.625%__*/
-  background: url(../img/hintergrund-klein.jpg) no-repeat 50% 50%; 
+  background: url(../img/hintergrund-klein.jpg) no-repeat 50% 50%;
   background-size:contain; /*__Woran orientier t sich die nGröße. AKA hier: Die Kommplette hoche und breite des Elements __*/
 }
+
+
 /* __Navigations Leiste__ */
 .header-nav{
   width: 100%;
@@ -38,6 +43,7 @@ body{
   font-weight: bold;
   font-size: 1.1rem;
 }
+
 .header-nav > a > img{
   height: 80%;
   width: auto;
@@ -45,6 +51,8 @@ body{
   left: 2rem;
   top: .25rem;
 }
+
+
 /* __Header-Nav Liste__ */
 .header-nav > ul{
   position: absolute;
@@ -59,6 +67,8 @@ body{
   height: 100%;
   padding: 0 .3rem 0 .3rem;
 }
+
+
 /* __Header-Nav Links__ */
 .header-nav > ul > li > a{
   display: inline-block;
@@ -74,14 +84,41 @@ body{
   color: #E5E5E5;
   text-decoration: none;
 }
+
 .header-nav > ul > li > a:active{
   color: #E5E5E5;
   text-decoration: none;
 }
+
 .header-nav > ul > li > a:visited{
   color: #FFF;
   text-decoration: none;
 }
+
 .active{
   background-color: #A62C21;
 }
+
+
+/* __Gird-System__ */
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class ^= "col-"]{
+  float: left;
+  min-height: 1px;
+  padding: .8rem;
+}
+
+.col-1{ width: 16.6666666667%; }
+.col-2{ width: 33.3333333333%; }
+.col-3{ width: 50%; }
+.col-6{ width: 100%; }
