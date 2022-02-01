@@ -1,0 +1,17 @@
+#test{
+  height: 400px;
+  width: 400px;
+  background-color: #f1601f;
+}
+
+#test::before{
+  content:"BEFORE__";
+  display:block;
+  background-color: #000;
+  color: #FFF;;
+}
+
+#test::after{
+  content:"__AFTER";
+  background-color: #00F;;
+}
