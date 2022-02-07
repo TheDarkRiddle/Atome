@@ -103,7 +103,8 @@ body{
 /* __Gird-System__ */
 .container{
   width: 95%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row::after{
@@ -112,7 +113,7 @@ body{
   display: block;
 }
 
-[class ^= "col-"]{
+[class *= 'col-']{
   float: left;
   min-height: 1px;
   padding: .8rem;
@@ -122,3 +123,35 @@ body{
 .col-2{ width: 33.3333333333%; }
 .col-3{ width: 50%; }
 .col-6{ width: 100%; }
+
+/* __Gird-System sichtbarkeit__ */
+.border, .border *{
+  border: 1px solid #91c4ff;
+}
+[class ^= "col-"]{
+  background: #bfdddd;
+}
+
+p{
+  background: #91c4ff;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+@media (max-width: 1024px){
+  .col-1{ width: 33.3333333333%}
+}
+
+@media (max-width: 768px){
+  .col-1{ width: 50%; }
+  .col-2{ width: 100%; }
+  .col-3{ width: 100%; }
+}
+
+@media (max-width: 480px){
+  .col-1{ width: 100%; }
+  .col-2{ width: 100%; }
+  .col-3{ width: 100%; }
+}
