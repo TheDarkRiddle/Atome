@@ -6,11 +6,19 @@ White=    #E5E5E5
 red=      #A62C21
 */
 
+/* --Global-- */
 body{
   box-sizing:border-box;
   margin:0;
   font-family:'raleway','lato', 'Helvetica Neue', 'Areal' ,'sans-serif';
   font-size: 16px;
+}
+
+/* __Generell__ */
+.clearFix::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 
@@ -104,11 +112,46 @@ body{
   padding: 0;
 }
 
-
 .active{
   background-color: #A62C21;
 }
 
+
+/* __ Header-nav-Mobile-Style__ */
+.mobile-nav-button{
+  box-sizing: border-box;
+  color: #FFF;
+  float: right;
+  font-size: 2rem;
+  border: 1px solid #FFF;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  margin-top: .35rem;
+}
+
+.mobile-nav-button span{
+  position: absolute;
+  left: 8px;
+  bottom: -2px;
+}
+
+.mobile-nav-content > ul > li{
+  display: block;
+  background: #3D3F45;
+  height: 50px;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.mobile-nav-dropDown{
+  position: relative;
+}
+.mobile-nav-content{
+  position: absolute;
+  right: 40px;
+  top: 50px;
+}
 
 /* __Gird-System__ */
 .container{
