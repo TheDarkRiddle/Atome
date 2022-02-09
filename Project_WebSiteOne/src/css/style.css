@@ -22,6 +22,11 @@ body{
 }
 
 
+ .active{
+  background-color: #A62C21 !important;
+}
+
+
 /* __Hintergrund Bild im Banner__ */
 .header-Banner{
   width: 100%;
@@ -112,11 +117,6 @@ body{
   padding: 0;
 }
 
-.active{
-  background-color: #A62C21;
-}
-
-
 /* __ Header-nav-Mobile-Style__ */
 .mobile-nav-button{
   box-sizing: border-box;
@@ -128,6 +128,7 @@ body{
   height: 37px;
   position: relative;
   margin-top: .35rem;
+  margin-bottom: .46rem;
 }
 
 .mobile-nav-button span{
@@ -146,13 +147,27 @@ body{
 
 .mobile-nav-dropDown{
   position: relative;
+  display: inline-block;
+  float: right;
 }
-.mobile-nav-content{
-  position: absolute;
-  right: 40px;
-  top: 50px;
+.mobile-nav-dropDown:hover > .mobile-nav-content{
+  display: block;
 }
 
+.mobile-nav-content{
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  display: none;
+}
+
+.nav-mobile{
+  display: none;
+}
+@media(max-width: 780px)  {
+.nav-mobile{ display: block;}
+.nav-default{ display: none;}
+}
 /* __Gird-System__ */
 .container{
   width: 95%;
