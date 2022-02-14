@@ -9,42 +9,37 @@
 
 	<body>
     <form method="get">
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name" placeholder="Dein Name"> <br><br>
 
-      <label for="maenlich">Mänlich</label>
-      <input id="maenlich" type="radio" name="geschlecht" value="m"> <br>
+			<fieldset>
+				<legend>Personal Data</legend>
 
-      <label for="weiblich">Weiblich</label>
-      <input id="weiblich" type="radio" name="geschlecht" value="w"> <br>
+		      <label for="name">Name</label>
+		      <input id="name" type="text" name="name" placeholder="Dein Name"> <br><br>
 
-      <label for="divers">Divers</label>
-      <input id="divers" type="radio" name="geschlecht" value="d"> <br><br>
+		      <label for="maenlich">Mänlich</label>
+		      <input id="maenlich" type="radio" name="geschlecht" value="m"> <br>
 
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email" placeholder="Deine Email"> <br><br>
+		      <label for="weiblich">Weiblich</label>
+		      <input id="weiblich" type="radio" name="geschlecht" value="w"> <br>
 
-      <input type="password" name="password" placeholder="Dein Password"> <br><br>
+		      <label for="divers">Divers</label>
+		      <input id="divers" type="radio" name="geschlecht" value="d"> <br><br>
+				</fieldset>
 
-      <button type="submit" name="sButton">Submit form</button>
-      <button type="reset" name="rButton">Reset Form</button>
-    </form>
+				<fieldset>
+					<legend>Login-Data</legend>
+					
+		      <label for="email">Email</label>
+		      <input id="email" type="email" name="email" placeholder="Deine Email"> <br><br>
 
-
-
-    <br><br><br><br>
-    <form action="Formulare.html" method="poste">
-
-      <input type="text" name="name" placeholder="Dein Name"> <br><br>
-      <input type="radio" name="geschlecht" value="m">Männlich <br>
-      <input type="radio" name="geschlecht" value="w">Weiblich <br>
-      <input type="radio" name="geschlecht" value="d">Divers <br><br>
-      <input type="email" name="email" placeholder="Deine Email"> <br><br>
-      <input type="password" name="password" placeholder="Dein Password"> <br><br>
+					<label for="password">Password</label>
+		      <input type="password" name="password" placeholder="Dein Password"> <br><br>
+				</fieldset>
 
       <button type="submit" name="sButton">Submit form</button>
       <button type="reset" name="rButton">Reset Form</button>
     </form>
+
 	</body>
 
 </html>
