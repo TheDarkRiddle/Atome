@@ -4,53 +4,33 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Formulare</title>
-		<link rel="stylesheet" type="text/css" href="Formulare.css">
+		<link rel="stylesheet" type="text/css" href="">
 	</head>
 
 	<body>
-		<h2>Input  Text</h2>
-		<input type="text">
+    <form action="Formulare.html" method="get">
+      <input type="text" name="name" placeholder="Dein Name"> <br><br>
+      <input type="radio" name="geschlecht" value="m">Männlich <br>
+      <input type="radio" name="geschlecht" value="w">Weiblich <br>
+      <input type="radio" name="geschlecht" value="d">Divers <br><br>
+      <input type="email" name="email" placeholder="Deine Email"> <br><br>
+      <input type="password" name="password" placeholder="Dein Password"> <br><br>
 
-		<h2>Input  Password</h2>
-		<input type="password">
+      <button type="submit" name="sButton">Submit form</button>
+      <button type="reset" name="rButton">Reset Form</button>
+    </form>
+    <br><br><br><br>
+    <form action="Formulare.html" method="poste">
+      <input type="text" name="name" placeholder="Dein Name"> <br><br>
+      <input type="radio" name="geschlecht" value="m">Männlich <br>
+      <input type="radio" name="geschlecht" value="w">Weiblich <br>
+      <input type="radio" name="geschlecht" value="d">Divers <br><br>
+      <input type="email" name="email" placeholder="Deine Email"> <br><br>
+      <input type="password" name="password" placeholder="Dein Password"> <br><br>
 
-		<h2>Input  Email</h2>
-		<input type="email">
-
-		<h2>Input  Search</h2>
-		<input type="search">
-
-		<h2>Input  Tel</h2>
-		<input type="tel">
-
-		<h2>Input  URL</h2>
-		<input type="url">
-			<!-- __Zeit__ -->
-		<h2>Input  date</h2>
-		<input type="date">
-
-		<h2>Input  datetime-local</h2>
-		<input type="datetime-local">
-
-		<h2>Input  week</h2>
-		<input type="week">
-
-		<h2>Input  time</h2>
-		<input type="time">
-			<!-- __extra__ -->
-		<h2>Input  range</h2>
-		<input type="range">
-
-		<h2>Input  color</h2>
-		<input type="color"> <br>
-
-		<!-- __Special für auswahlen__ -->
-		<input type="radio" name="Geschlecht" value="m"> M
-		<input type="radio" name="Geschlecht" value="w"> W
-		<!-- __Checkboxes__ --><br>
-		<input type="checkbox" name="checkbox" value="lol" checked> LOL?
-		<input type="checkbox" name="checkbox" value="lul" checked> LUL?
-		<input type="checkbox" name="checkbox" value="lal" checked> LAL?
+      <button type="submit" name="sButton">Submit form</button>
+      <button type="reset" name="rButton">Reset Form</button>
+    </form>
 	</body>
 
 </html>
