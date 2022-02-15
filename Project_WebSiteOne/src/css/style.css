@@ -188,9 +188,12 @@ body{
 
 .newsletter-bereich  form{
   padding-top: .7rem;
+  float: right;
+  width: 100%;
+  text-align: right;
 }
 
-.newsletter-bereich form input{
+.newsletter-input{
   width: 60%;
   height: 32px;
   border: 2px solid #E5E5E5;
@@ -198,11 +201,12 @@ body{
   padding-left: .5rem;
 }
 
-.newsletter-bereich form button{
+.newsletter-button{
   height: 38px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #A62C21;
   padding-left: .5rem;
-  background: #E5E5E5;
+  background: #A62C21;
+  color: #FFF;
 }
 
 #pNewsLetter{
