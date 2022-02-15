@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title>FormAtribut</title>
+		<link rel="stylesheet" type="text/css" href="">
+	</head>
+
+	<body>
+
+    <form id="userForm"  method="get">
+      <fieldset>
+        <fieldset>
+            <legend>Persönliche Daten</legend>
+
+            <label for="name">Name</label>
+            <input type="text" id="name">
+              <br><br>
+            <label for="gebAlter">Alter</label>
+            <input id="gebAlter" type="date" name="gebAlter">
+              <br><br>
+            <label for="maenlich">Mänlich</label>
+            <input id="meanlich"type="radio" name="maenlich" value="m">
+
+            <label for="weiblich">Weiblich</label>
+            <input id="weiblich"type="radio" name="weiblich" value="w">
+
+            <label for="divers">Divers</label>
+            <input id="divers"type="radio" name="divers" value="d">
+              <br><br>
+          </fieldset>
+          <button type="submit" name="sButton">Absenden</button>
+        </fieldset>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" form="userForm">
+    </form>
+	</body>
+
+</html>
