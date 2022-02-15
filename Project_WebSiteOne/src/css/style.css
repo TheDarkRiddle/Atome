@@ -21,12 +21,18 @@ body{
   clear: both;
 }
 
-
  .active{
   background-color: #A62C21 !important;
 }
 
+.wichtiger-Text{
+  font-weight: bold;
+}
 
+.screenReader{
+    display: none;;
+}
+/* ---------------------------------------------------------------------------------------------- */
 /* __Hintergrund Bild im Banner__ */
 .header-Banner{
   width: 100%;
@@ -45,6 +51,7 @@ body{
 }
 
 
+/* ---------------------------------------------------------------------------------------------- */
 /* __Navigations Leiste__ */
 .header-nav{
   width: 100%;
@@ -117,6 +124,8 @@ body{
   padding: 0;
 }
 
+
+/* ---------------------------------------------------------------------------------------------- */
 /* __ Header-nav-Mobile-Style__ */
 .mobile-nav-button{
   box-sizing: border-box;
@@ -168,6 +177,39 @@ body{
 .nav-mobile{ display: block;}
 .nav-default{ display: none;}
 }
+
+/* --------------------------------------------------------------------------------------------- */
+/* __Newsletter-Bereich__ */
+.newsletter-bereich{
+  width: 100%;
+  background: #3D3F45;
+  color: #E5E5E5;
+}
+
+.newsletter-bereich  form{
+  padding-top: .7rem;
+}
+
+.newsletter-bereich form input{
+  width: 60%;
+  height: 32px;
+  border: 2px solid #E5E5E5;
+  background: #E5E5E5;
+  padding-left: .5rem;
+}
+
+.newsletter-bereich form button{
+  height: 38px;
+  border: 2px solid #E5E5E5;
+  padding-left: .5rem;
+  background: #E5E5E5;
+}
+
+#pNewsLetter{
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+/* ---------------------------------------------------------------------------------------------- */
 /* __Gird-System__ */
 .container{
   width: 95%;
@@ -191,6 +233,7 @@ body{
 .col-1{ width: 16.6666666667%; }
 .col-2{ width: 33.3333333333%; }
 .col-3{ width: 50%; }
+.col-4{ width: 66.6666666666%;}
 .col-6{ width: 100%; }
 
 /* __Gird-System sichtbarkeit__ */
@@ -209,6 +252,9 @@ p{
 }
 */
 
+
+/* ---------------------------------------------------------------------------------------------- */
+/* __Media Querrys__ */
 @media (max-width: 1024px){
   .col-1{ width: 33.3333333333%}
 }
@@ -217,10 +263,12 @@ p{
   .col-1{ width: 50%; }
   .col-2{ width: 100%; }
   .col-3{ width: 100%; }
+  .col-4{ width: 100%;}
 }
 
 @media (max-width: 480px){
   .col-1{ width: 100%; }
   .col-2{ width: 100%; }
   .col-3{ width: 100%; }
+  .col-4{ width: 100%;}
 }
