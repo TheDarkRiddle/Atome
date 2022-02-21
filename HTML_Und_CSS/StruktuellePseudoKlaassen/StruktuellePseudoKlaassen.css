@@ -1,0 +1,20 @@
+:root{
+  /* Für HTMl aber Spezifischer */
+  font-size: 50px;
+}
+
+:empty{
+  height:50px;
+  width: auto;
+  background: #FF0;
+}
+
+.container :first-child{
+
+  background: #F00;
+}
+
+.container :last-child{
+
+  background: #00F;
+}
