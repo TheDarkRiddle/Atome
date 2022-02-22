@@ -1,0 +1,39 @@
+div{
+  height: 200px;
+  width: 200px;
+  background: #900;
+  margin-bottom: 5px;
+}
+/* __Outline__ */
+#test{
+
+  border: 10px solid grey;
+  outline: 10px solid #049;
+}
+
+/* __Box Shadow__ */
+/* box-shadow: x-Versatzt y-versatzt weichzeichnung vergrößerung farbe inset */
+#boxShadow01{
+  box-shadow: 10px 5px #033;
+}
+
+#boxShadow02{
+  box-shadow: 10px 5px 20px #033;
+}
+
+#boxShadow02{
+  box-shadow: 0px 0px 0px 10px #033;
+}
+
+#boxShadow03{
+  box-shadow: 0px 0px 0px 10px #033;
+}
+
+#boxShadow04{
+  box-shadow: 0px 0px 30px #033 inset;
+}
+
+#boxShadow05{
+  box-shadow: 10px 0px 30px #033 inset,
+              0px 0px 0px 10px #033;
+}

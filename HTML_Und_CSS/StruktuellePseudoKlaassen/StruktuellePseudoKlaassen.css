@@ -18,3 +18,50 @@
 
   background: #00F;
 }
+/* __NR Zwei__ */
+.container :nth-child(5){
+  color: #F00;
+}
+
+.container :nth-child(even){
+  background: #444;
+}
+
+.container :nth-child(odd){
+  background: #222;
+}
+
+.container :nth-child(3n+1){
+  color: #AAA;
+}
+
+body :only-child{
+  border: 5px solid #0F0;
+}
+
+/* __NR Drei für Typen__ */
+
+.container :last-of-type{
+  color: #FF0;
+}
+
+.container p:first-of-type{
+  color: #0FF;
+}
+
+.container div:nth-of-type(odd){
+  width: 200px;
+}
+.container div:nth-of-type(even){
+  width: 400px;
+}
+
+.container div:nth-last-of-type(4n+1){
+  width: 300px;
+}
+.container div:nth-last-of-type(3n+1){
+  width: 500px;
+}
+body :only-of-type{
+  background: #717;
+}
