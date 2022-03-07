@@ -33,6 +33,17 @@ body{
     display: none;;
 }
 
+.intro-container{
+  text-align: center;
+  text-transform: uppercase;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section{
+  padding: 4rem 0;
+}
 :focus{
   outline: none;
   box-shadow: 0px 0px 2px 2px #E5E5E5, 0px 0px 10px #E5E5E5;
@@ -192,6 +203,7 @@ body{
   width: 100%;
   background: #3D3F45;
   color: #E5E5E5;
+  padding: 0;
 }
 
 #newsletter-bereich  form{
@@ -217,9 +229,56 @@ body{
   color: #FFF;
 }
 
+.newsletter-button:hover{
+  box-shadow: 2px 2px 2px 1px #1B1D23;
+}
+
 #pNewsLetter{
   box-sizing: border-box;
   font-size: 1.2rem;
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* __Leistungen-Bereich__ */
+#Leistungen-Bereich .row a{
+  height: 28px;
+  border: 2px solid #A62C21;
+  padding: 0.2rem;
+  padding-top: .4rem;
+  background: #A62C21;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#Leistungen-Bereich .leistungs-Box{
+  background: #3D3F45;
+  color: #FFF;
+  text-align: center;
+  padding: 1rem 3rem 2.5rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ #Leistungen-Bereich .row > .col-3:nth-of-type(even) > .leistungs-Box{
+   margin-left: 2.6rem;;
+ }
+
+ #Leistungen-Bereich .row > .col-3:nth-of-type(odd) > .leistungs-Box{
+  margin-right: 2.6rem;;
+ }
+
+ .intro-container > h1{
+   font-size: 2rem;
+ }
+
+.intro-container > p{
+  font-size: 1.3rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+#Leistungen-Bereich a:hover{
+  box-shadow: 3px 3px 2px 1px #1B1D23;
 }
 /* ---------------------------------------------------------------------------------------------- */
 /* __Gird-System__ */
