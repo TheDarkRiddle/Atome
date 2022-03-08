@@ -239,7 +239,7 @@ section{
 }
 /* ---------------------------------------------------------------------------------------------- */
 /* __Leistungen-Bereich__ */
-#Leistungen-Bereich .row a{
+#Leistungen-Bereich .row .Leistungs-Button{
   height: 28px;
   border: 2px solid #A62C21;
   padding: 0.2rem;
@@ -247,6 +247,10 @@ section{
   background: #A62C21;
   color: #FFF;
   text-decoration: none;
+}
+
+#Leistungen-Bereich .Leistungs-Button:hover{
+  box-shadow: 3px 3px 2px 1px #1B1D23;
 }
 
 #Leistungen-Bereich .leistungs-Box{
@@ -257,28 +261,25 @@ section{
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-top:4rem;
 }
 
  #Leistungen-Bereich .row > .col-3:nth-of-type(even) > .leistungs-Box{
-   margin-left: 2.6rem;;
+   margin-left: 2.6rem;
  }
 
  #Leistungen-Bereich .row > .col-3:nth-of-type(odd) > .leistungs-Box{
-  margin-right: 2.6rem;;
+  margin-right: 2.6rem;
  }
 
- .intro-container > h1{
+  #Leistungen-Bereich .intro-container > h1{
    font-size: 2rem;
  }
 
-.intro-container > p{
+ #Leistungen-Bereich .intro-container > p{
   font-size: 1.3rem;
   padding: 0px;
   margin: 0px;
-}
-
-#Leistungen-Bereich a:hover{
-  box-shadow: 3px 3px 2px 1px #1B1D23;
 }
 /* ---------------------------------------------------------------------------------------------- */
 /* __Gird-System__ */
@@ -326,17 +327,59 @@ p{
 
 /* ---------------------------------------------------------------------------------------------- */
 /* __Media Querrys__ */
-@media (max-width: 1024px){
+@media screen (max-width:1366px){
+  /*___________Lesitung___________ */
+  .leistungs-Box{ width: 80%;}
+
+
+/*___________Algemien___________ */
+ .intro-container{ width: 90%; }
+}
+
+
+@media screen (max-width: 1024px){
+  /*___________Grid System___________ */
   .col-1{ width: 33.3333333333%}
+
+
+  /*___________Lesitung___________ */
+   .leistungs-Box{
+   width: 90%;
+   margin-top:2rem;
+}
+
+/*___________Algemien___________ */
+   .intro-container{
+   width: 100%;
+   margin-top:2rem;
+ }
 }
 
 @media (max-width: 768px){
+  /*___________Grid System___________ */
   .col-1{ width: 50%; }
   .col-2{ width: 100%; }
   .col-3{ width: 100%; }
   .col-4{ width: 100%;}
+
+
+  /*___________Lesitung___________ */
+   .leistungs-Box{
+   width: 1000%;
+   margin-right: 0;
+   margin-left: 0;
 }
 
+/*___________Algemien___________ */
+   .intro-container{
+   width: 100%;
+   margin-right: 0;
+   margin-left: 0;
+ }
+}
+}
+
+}
 @media (max-width: 480px){
   .col-1{ width: 100%; }
   .col-2{ width: 100%; }
