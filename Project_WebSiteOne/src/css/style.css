@@ -253,7 +253,7 @@ section{
   box-shadow: 3px 3px 2px 1px #1B1D23;
 }
 
-#Leistungen-Bereich .leistungs-Box{
+#Leistungen-Bereich .leistungs-box{
   background: #3D3F45;
   color: #FFF;
   text-align: center;
@@ -264,11 +264,11 @@ section{
   margin-top:4rem;
 }
 
- #Leistungen-Bereich .row > .col-3:nth-of-type(even) > .leistungs-Box{
+ #Leistungen-Bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
    margin-left: 2.6rem;
  }
 
- #Leistungen-Bereich .row > .col-3:nth-of-type(odd) > .leistungs-Box{
+ #Leistungen-Bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
   margin-right: 2.6rem;
  }
 
@@ -282,7 +282,7 @@ section{
   margin: 0px;
 }
 /* ---------------------------------------------------------------------------------------------- */
-/* __Gird-System__ */
+/* __Grid-System__ */
 .container{
   width: 95%;
   margin-left: auto;
@@ -308,8 +308,8 @@ section{
 .col-4{ width: 66.6666666666%;}
 .col-6{ width: 100%; }
 
-/* __Gird-System sichtbarkeit__ */
-/*.border, .border *{
+/* __Grid-System sichtbarkeit__ */
+/* .border, .border *{
   border: 1px solid #91c4ff;
 }
 [class *= "col-"]{
@@ -321,68 +321,61 @@ p{
   margin: 0;
   color: #FFF;
   text-align: center;
-}
-*/
+} */
+
 
 
 /* ---------------------------------------------------------------------------------------------- */
 /* __Media Querrys__ */
-@media screen (max-width:1366px){
-  /*___________Lesitung___________ */
-  .leistungs-Box{ width: 80%;}
+@media (max-width:1366px){
+  /*___________Leistung___________ */
+    #Leistungen-Bereich .leistungs-box{ width: 80%;}
 
-
-/*___________Algemien___________ */
- .intro-container{ width: 90%; }
+/*___________Algemein___________ */
+   #Leistungen-Bereich .intro-container { width: 90%;}
 }
 
 
-@media screen (max-width: 1024px){
+@media (max-width: 1024px){
   /*___________Grid System___________ */
-  .col-1{ width: 33.3333333333%}
+  .col-1{ width: 33.3333333333%; }
 
+/* ___________Leistung___________ */
+  #Leistungen-Bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+    margin-left: auto;
+  }
 
-  /*___________Lesitung___________ */
-   .leistungs-Box{
-   width: 90%;
-   margin-top:2rem;
-}
-
-/*___________Algemien___________ */
-   .intro-container{
-   width: 100%;
-   margin-top:2rem;
+ /* ___________Leistung___________ */
+  #Leistungen-Bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+   margin-right: auto;
+  }
  }
-}
 
 @media (max-width: 768px){
   /*___________Grid System___________ */
   .col-1{ width: 50%; }
   .col-2{ width: 100%; }
   .col-3{ width: 100%; }
-  .col-4{ width: 100%;}
+  .col-4{ width: 100%; }
 
 
-  /*___________Lesitung___________ */
-   .leistungs-Box{
-   width: 1000%;
-   margin-right: 0;
-   margin-left: 0;
+  /*___________Leistung___________ */
+   #Leistungen-Bereich .leistungs-box{
+   margin-top: 2rem;
 }
 
-/*___________Algemien___________ */
-   .intro-container{
-   width: 100%;
-   margin-right: 0;
-   margin-left: 0;
+
+/*___________Algemein___________ */
+  #Leistungen-Bereich .intro-container{
+   margin-top: 2rem;
+  }
  }
-}
-}
 
-}
+
 @media (max-width: 480px){
   .col-1{ width: 100%; }
   .col-2{ width: 100%; }
   .col-3{ width: 100%; }
-  .col-4{ width: 100%;}
+  .col-4{ width: 100%; }
+
 }
