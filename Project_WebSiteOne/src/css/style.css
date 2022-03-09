@@ -214,7 +214,7 @@ section{
 }
 
 .newsletter-input{
-  width: 60%;
+  width: 90%;
   height: 32px;
   border: 2px solid #E5E5E5;
   background: #E5E5E5;
@@ -227,6 +227,7 @@ section{
   padding-left: .5rem;
   background: #A62C21;
   color: #FFF;
+  margin-top: .65rem;
 }
 
 .newsletter-button:hover{
@@ -239,7 +240,7 @@ section{
 }
 /* ---------------------------------------------------------------------------------------------- */
 /* __Leistungen-Bereich__ */
-#Leistungen-Bereich .row .Leistungs-Button{
+#Leistungen-Bereich .row .link-button{
   height: 28px;
   border: 2px solid #A62C21;
   padding: 0.2rem;
@@ -247,9 +248,10 @@ section{
   background: #A62C21;
   color: #FFF;
   text-decoration: none;
+  min-width:
 }
 
-#Leistungen-Bereich .Leistungs-Button:hover{
+#Leistungen-Bereich .link-button:hover{
   box-shadow: 3px 3px 2px 1px #1B1D23;
 }
 
@@ -261,15 +263,15 @@ section{
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  margin-top:4rem;
+  margin-top:3rem;
 }
 
  #Leistungen-Bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
-   margin-left: 2.6rem;
+   margin-left: 1.6rem;
  }
 
  #Leistungen-Bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
-  margin-right: 2.6rem;
+  margin-right: 1.6rem;
  }
 
   #Leistungen-Bereich .intro-container > h1{
@@ -324,12 +326,11 @@ p{
 } */
 
 
-
 /* ---------------------------------------------------------------------------------------------- */
 /* __Media Querrys__ */
 @media (max-width:1366px){
   /*___________Leistung___________ */
-    #Leistungen-Bereich .leistungs-box{ width: 80%;}
+   #Leistungen-Bereich .leistungs-box{ width: 70%;}
 
 /*___________Algemein___________ */
    #Leistungen-Bereich .intro-container { width: 90%;}
@@ -349,6 +350,21 @@ p{
   #Leistungen-Bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
    margin-right: auto;
   }
+
+  section{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  /* ___________NewLetter___________*/
+   .newsletter-input{
+    width: 100%;
+    padding-right:0;
+    padding-left:0;
+  }
+  .newsletter-button{
+    width: 100%
+  }
  }
 
 @media (max-width: 768px){
@@ -364,18 +380,27 @@ p{
    margin-top: 2rem;
 }
 
-
-/*___________Algemein___________ */
+  /*___________Leistung___________ */
   #Leistungen-Bereich .intro-container{
    margin-top: 2rem;
   }
- }
+
+  section{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+}
 
 
 @media (max-width: 480px){
+  /*___________Grid System___________ */
   .col-1{ width: 100%; }
   .col-2{ width: 100%; }
   .col-3{ width: 100%; }
   .col-4{ width: 100%; }
 
+
+/*___________Leistung___________ */
+  #Leistungen-Bereich .leistungs-box{ margin-top: .5rem; }
+  #Leistungen-Bereich .intro-ontainer{ margin-top: .5rem; }
 }
